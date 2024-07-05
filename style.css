@@ -1,0 +1,116 @@
+/* font-family: "Montserrat", sans-serif;
+font-family: "Fraunces", serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container{
+    background-color: bisque;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding : 1em;
+    position: relative;
+}
+
+.header img{
+    height: 70%;
+    width:5%;
+    margin-top: 0.7%;
+}
+
+.header a{
+    color: gray;
+    padding-top: 1.5%;
+}
+
+.blogs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:1em;
+    padding:1em;
+}
+
+.card{
+    width: 25em;
+    height: 12em;
+    border: 1px solid gray;
+    transition: ease-in-out;
+    padding: 2em;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+.card:hover{
+    background-color: rgb(248, 215, 174);
+    cursor: pointer;
+}
+
+.card h3{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(95, 95, 249);
+    letter-spacing: -0.01em;
+}
+.card h2{
+    font-family: "Fraunces", serif;
+    color: rgb(0, 0, 0);
+    letter-spacing: -0.01em;
+}
+.card p:first-of-type{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(63, 63, 63);
+    letter-spacing: -0.01em;
+    font-size: 0.5em;
+    padding-bottom: 0.8em;
+}
+.card p:last-of-type{
+    font-family: "Fraunces", serif;
+    color: rgb(0, 0, 0);
+    letter-spacing: -0.01em;
+    font-size: 1em;
+    /* white-space: nowrap;  */
+    white-space: normal;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.card a{
+    font-family:"Fraunces", serif;
+    color: rgb(95, 95, 249);
+    letter-spacing: -0.01em;
+    padding-bottom: 0.8em;    
+    position: absolute;
+    bottom: 0%;
+}
